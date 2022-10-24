@@ -1,12 +1,11 @@
 import express, { Request, Response } from 'express';
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-require('dotenv').config();
-
+import * as dotenv from 'dotenv';
 import { json } from 'body-parser';
 
 import routes from './routes/router';
 import helloWorldRoute from './routes/helloWorld';
 
+dotenv.config();
 const app = express();
 
 //middlewares
