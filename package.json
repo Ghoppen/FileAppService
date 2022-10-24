@@ -1,0 +1,42 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "A service for File upload and download app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon dist/app.js",
+    "build": "tsc --build",
+    "build-clean": "tsc --build --clean",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghoppen/FileAppService.git"
+  },
+  "author": "Gertautas Hoppen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ghoppen/FileAppService/issues"
+  },
+  "homepage": "https://github.com/Ghoppen/FileAppService#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.4",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
+  }
+}

@@ -1,0 +1,9 @@
+# Ignore Artifacts
+**/build
+**/dist
+
+#versioning
+**/.git
+**/.svn
+**/.hg
+**/node_modules
