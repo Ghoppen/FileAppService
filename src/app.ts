@@ -11,8 +11,8 @@ const app = express();
 //middlewares
 app.use(express.static(path.join(__dirname, 'files')));
 app.use(json());
-app.use('/', helloWorld);
-app.use('/', fileExchanger);
+app.use(helloWorld);
+app.use(fileExchanger);
 
 app.use((err: Error, req: Request, res: Response) => {
   res.status(500).json({
